@@ -11,7 +11,7 @@ services:
         ports:
             - '3306:3306'
         volumes:
-            - ./mysql-db:/var/lib/mysql
+                - ./mysql-db:/var/lib/mysql:rw
         networks:
             - spring-network    
                   #    app-server:
